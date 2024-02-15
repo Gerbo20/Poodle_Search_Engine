@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        
+        <title>Poodle Search</title>
+            <link rel="stylesheet" href="style.css">
+            <link rel="icon" type="image/x-icon" href="assets/Poodle_P.png">
+        <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+        <style>
+            body {
+                padding: 25px;
+                background-color: white;
+                color: black;
+                font-size: 25px;
+            }
+            .dark-mode {
+                background-color: black;
+                color: white;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class = "shortcuts">
+            <!--a href="https://www.google.com/imghp?hl=en" class="images">Images</a-->
+            <!--a href="https://www.google.com/advanced_search" class="adv_search">Advanced Search</a-->
+            <a href="imgsearch.html" class="images">Images</a>
+            <a href="advsearch.html" class="adv_search">Advanced Search</a>
+        </div>
+
+        <img src="assets/Poodle_logo.png" class="logo">
+        
+        <form action="https://www.google.com/search">
+        
+            <div class="mainSearch"></div>
+                <input class="searchBar" type="text" name="q" placeholder="Search...">
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Poodle Search">
+                <input type="submit" value="I'm Feeling Lucky">
+               
+                <input onclick="darkToogle()" type="button" value="Toogle: Dark-mode">
+            </div>
+        </form>
+        
+        <script>
+            function darkToogle() {
+               var element = document.body;
+               element.classList.toggle("dark-mode");
+            }
+            </script>
+    </body>
+</html>
+

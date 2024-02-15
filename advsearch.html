@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="assets/Poodle_P.png">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Poodle Advanced Search</title>
+    <style>
+        a{
+            text-align: end;
+            font-size: 25px;
+            color: blue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        img{
+            padding: 5px;
+            width: 180px;
+        }
+
+        h3{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+        }
+
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        label{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        input{
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+            margin: 10px;
+            padding: 8px;
+            text-align: center;
+        }
+        
+    </style>
+
+</head>
+<body>
+   
+    <img src="assets/Poodle_logo.png" class="logo">
+
+    <h3 style="color:Tomato;">Advanced Search:</h3>
+    <hr class="dashed">
+    <p>Find pages...</p>
+    <form action="https://www.google.com/advanced_search" method="get">
+        <label for="allWords">with all these words:</label>
+        <input type="text" id="allWords" name="q">
+
+        <br>
+        <br>
+        <br>
+
+        <label for="exactPhrase">with this exact word or phrase:</label>
+        <input type="text" id="exactPhrase" name="as_epq">
+
+        <br>
+        <br>
+        <br>
+
+        <label for="anyWords">with any of these words:</label>
+        <input type="text" id="anyWords" name="as_oq">
+
+        <br>
+        <br>
+        <br>
+
+        <label for="noneWords">with none of these words:</label>
+        <input type="text" id="noneWords" name="as_eq">
+
+        <br>
+        <br>
+        <br>
+
+        <input type="submit" value="Search">
+    </form>
+    <a href="index.html" class="main-website">Go back to main search</a>
+    <br>
+</body>
+</html>

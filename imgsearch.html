@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="assets/Poodle_P.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search</title>
+    <style>
+        a{
+            color: blue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            justify-content:end;
+            margin-right: 10px;
+            
+        }
+        
+        img{
+            padding: 5px;
+            width: 300px;
+            display: block;
+            margin-top: 150px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .search-bar {
+            width: 80%;
+            padding: 8px;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-size: 15px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .search-results {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        input[type="submit"]{
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            font-size: 15px;
+            cursor: pointer;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="main-website">Go back to main search</a>
+
+    <div class="container">
+        <img src="assets/Poodle_logo_Img.png" class="logo">
+
+        <form action="https://www.google.com/imghp" method="get">
+            <input type="text" class="search-bar" type="text" name="q" placeholder="Search images...">
+            <input type="submit" value="Search">
+        </form>
+        <div class="search-results">
+            <!-- Image search results will be displayed here -->
+        </div>
+    </div>
+
+</body>
+</html>
